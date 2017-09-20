@@ -495,6 +495,7 @@ tput sgr0;
 
 # Go to app folder and setup
 cd $appName
+
 yarn init
 ## DEV dependencies
 # brunch
@@ -510,6 +511,8 @@ yarn add --dev react-test-renderer
 
 #Prod Dependencies
 yarn add array-shuffle axios babel-polyfill body-parser classnames event-stream express prop-types react react-dom react-redux redux react-icons react-router-dom
+
+installComponent= wget https://raw.githubusercontent.com/jMoulis/React-Redux-installer/master/installComponent.sh
 
 tput setaf 2;
 tput bold;
@@ -527,7 +530,7 @@ read -p "Do you want to init git repo [y/n] ?" -n 1 -r
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
 # Git init
-cd $appName git init
+cd git init
 # Create gitIgnore
 echo "node_modules" > .gitignore
 tput setaf 2;

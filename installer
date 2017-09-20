@@ -509,7 +509,7 @@ yarn add --dev chai enzyme jsdom mocha
 yarn add --dev react-test-renderer
 
 #Prod Dependencies
-yarn add array-shuffle axios babel-polyfill body-parser classnames event-stream express prop-types react react-dom react-redux redux react-icons
+yarn add array-shuffle axios babel-polyfill body-parser classnames event-stream express prop-types react react-dom react-redux redux react-icons react-router-dom
 
 tput setaf 2;
 tput bold;
@@ -537,11 +537,9 @@ Git done
 fi
 tput sgr0;
 echo "
-
 "
-
 tput bold;
-read -p "Do you want to start the brunch server [y/n] ?" -n 1 -r
+read -p "Do you want to start Atom [y/n] ?" -n 1 -r
 echo "
 "
 if [[ $REPLY =~ ^[Yy]$ ]]
@@ -549,6 +547,20 @@ then
 tput setaf 2;
 echo "
 Let's go to work, have good coding session
+"
+tput sgr0;
+atom .
+fi
+
+tput bold;
+read -p "Do you want to start the brunch server [y/n] ?" -n 1 -r
+echo "
+"y
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+tput setaf 2;
+echo "
+Server Brunch started
 "
 tput sgr0;
 brunch watch --server

@@ -5,6 +5,8 @@ Small script for lazy react dev:
 Comes with following modules:
 React, Redux,Router, Axios, Babel, Brunch, Eslint and friends.
 
+And a installerComponent already copied in your app folder, but if needed you have the file in the repo
+
 #### Install process
 
 The lazy way:

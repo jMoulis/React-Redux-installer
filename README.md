@@ -3,7 +3,7 @@
 Small script for lazy react dev:
 
 Comes with following modules:
-React, Redux,Router, axios, Babel, Brunch, Eslint and friends.
+React, Redux,Router, Axios, Babel, Brunch, Eslint and friends.
 
 #### Install process
 

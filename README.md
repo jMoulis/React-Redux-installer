@@ -24,4 +24,19 @@ The lazy way:
 
 You can also copy the file to your /usr/local/bin then you'll be able to run the script from anywhere. (I'm not sure if it is a best practice)
 
+
+#### Script
+
+Don't forget to insert into your package.json the following scripts, if you want cli shorcut
+```json
+"scripts": {
+    "start:node": "node server/index.js",
+    "start:brunch": "brunch watch",
+    "save-deps": "rm -rf node_modules && npm update --save && npm update --save-dev",
+    "lint": "eslint --fix app",
+    "test": "mocha tests/.setup.js tests/**/*.test.js",
+    "test:watch": "mocha --watch tests/.setup.js tests/**/*.test.js",
+    "test:one": "mocha --watch tests/.setup.js $1"
+  }
+  ```
 I'm a newbee so the script is really simple and probably holds a lot off error, so feel free to make it better :-)
